@@ -1,0 +1,6 @@
+[submodule "twilio-php"]
+	path = twilio-php
+	url = http://github.com/twilio/twilio-php
+[submodule "php-pushover"]
+	path = php-pushover
+	url = http://github.com/kryap/php-pushover.git
