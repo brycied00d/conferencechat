@@ -1,0 +1,26 @@
+<?php
+// Phone numbers - authorized users and the name-mapping.
+// Must be in e164 format (required by Twilio)
+$numbers = array(
+	'+18005550123' => "Peter",
+	'+18005550101' => "John",
+	);
+// Pushover user keys
+$pushover = array(
+	'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+	);
+// Email recipients
+$email = array(
+	'me@example.com',
+	);
+
+// Hardcore definitions:
+// The callback URL to provide to Twilio for SMS delivery and failure notification
+define('TWILIO_CALLBACK', 'http://somesite.com/conferencechat/smscallback.php');
+// The phone number to be used as the "from" of the SMS messages (in e164 format)
+define('TWILIO_FROM', '+15554440101');
+// The Pushover application key to use. Leave empty to disable.
+define('PUSHOVER_API_KEY', '');
+// A file for logging all request information. Leave empty to disable.
+define('DEBUG_LOG', '');
+
